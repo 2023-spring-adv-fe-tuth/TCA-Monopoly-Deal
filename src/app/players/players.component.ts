@@ -9,6 +9,8 @@ export class PlayersComponent  implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('Players Component TS');
+  }
 
 }
