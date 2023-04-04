@@ -10,6 +10,10 @@ export class GameoverPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let winner = 'TEST WINNER';
   }
+
+
+
 
 }
