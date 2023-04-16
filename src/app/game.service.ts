@@ -56,6 +56,34 @@ const playerList : Player[] = [
 
 
 ];
+const gameList : Game[] = [
+  {
+    players: ["Sujal","Jimmy"],
+    winner: "Sujal",
+    startTime : "",
+    endTime: "",
+    duration: "",
+    current: false},
+    {
+      players: ["Sujal","Jimmy","Connor"],
+      winner: "Sujal",
+      startTime : "",
+      endTime: "",
+      duration: "",
+      current: false
+    },
+    {
+        players: ["Sujal","Jimmy","Andrew"],
+        winner: "Sujal",
+        startTime : "",
+        endTime: "",
+        duration: "",
+        current: false
+    }
+
+];
+const currentPlayerList : Player[] = [];
+
 
 @Injectable({
   providedIn: 'root'
@@ -68,10 +96,15 @@ export class GameService {
   returnPlayerList = () =>{
     return playerList;
   }
-  updateCurrentGame = () =>{
-    
-  }
+  updateCurrentGame = (currentPlayerList:Player[]) =>{
+    currentPlayerList = currentPlayerList;
+    console.log(currentPlayerList);
+  
 
+  }
+  returnCurrentGame = () => {
+    return currentPlayerList;
+  }
 
 
 

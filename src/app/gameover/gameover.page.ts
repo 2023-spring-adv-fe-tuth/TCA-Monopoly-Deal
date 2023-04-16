@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-gameover',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameoverPage implements OnInit {
 
-  constructor() { }
+  constructor(private gameSvc: GameService) { }
 
   ngOnInit() {
     let winner = 'TEST WINNER';
+    console.log(this.gameSvc.returnCurrentGame());
   }
 
 

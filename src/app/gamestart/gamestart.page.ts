@@ -23,6 +23,7 @@ export class GamestartPage implements OnInit {
   updateCurrentPlayerList(ev:any){
     this.currentPlayerList = ev.target.value;
     console.log(this.currentPlayerList);
+    this.gameSvc.updateCurrentGame(ev.target.value);
   }
 
 

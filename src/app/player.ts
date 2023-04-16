@@ -13,7 +13,8 @@ export interface Game {
     winner: string,
     startTime : string,
     endTime: string,
-    duration: string
+    duration: string,
+    current: boolean
 
 }
 
