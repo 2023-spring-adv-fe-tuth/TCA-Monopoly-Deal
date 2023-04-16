@@ -17,12 +17,13 @@
       cancelText="Go Back"
       (ionChange)="updateCurrentPlayerList($event)"
       >
-        <ion-select-option *ngFor="let player of playersList" [value]="player">{{player.name}}</ion-select-option>
+        <ion-select-option *ngFor="let player of playersList" [value]="player.name">{{player.name}}</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>
 
 
+  <h2>{{currentPlayerList}}</h2>
   <ion-button>
     Start
   </ion-button>

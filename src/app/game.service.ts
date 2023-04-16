@@ -2,10 +2,8 @@ import { Injectable } from '@angular/core';
 import { Player } from './player';
 import { Game } from './player';
 
-
-
 const playerList : Player[] = [
-  
+
   {
       name:"Sujal",
       wins: 0,
@@ -58,6 +56,7 @@ const playerList : Player[] = [
 
 
 ];
+
 @Injectable({
   providedIn: 'root'
 })
@@ -70,7 +69,7 @@ export class GameService {
     return playerList;
   }
   updateCurrentGame = () =>{
-
+    
   }
 
 
