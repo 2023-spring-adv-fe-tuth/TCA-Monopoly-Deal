@@ -7,9 +7,6 @@ export interface Player {
     lose_streak: number
 };
 
-
-
-
 export interface Game {
 
     players: string[],
