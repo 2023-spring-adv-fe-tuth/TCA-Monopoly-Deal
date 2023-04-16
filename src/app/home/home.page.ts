@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Player } from '../player';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +9,22 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private gameSvc: GameService
+  ) {}
+
+  playersList : Player[] = [];
 
   ngOnInit() {
     console.log('TEST');
+    this.playersList = this.gameSvc.printPlayerList();
+    console.table(this.playersList)
+
+
+
+
   }
+
+  
 
 }
