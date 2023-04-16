@@ -61,16 +61,11 @@ const playerList : Player[] = [
   providedIn: 'root'
 })
 
-
-
-
-
-
 export class GameService {
 
   constructor() { }
 
-  printPlayerList = () =>{
+  returnPlayerList = () =>{
     return playerList;
   }
 

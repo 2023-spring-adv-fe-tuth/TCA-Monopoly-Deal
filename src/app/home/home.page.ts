@@ -17,7 +17,7 @@ export class HomePage {
 
   ngOnInit() {
     console.log('TEST');
-    this.playersList = this.gameSvc.printPlayerList();
+    this.playersList = this.gameSvc.returnPlayerList();
     console.table(this.playersList)
 
 
