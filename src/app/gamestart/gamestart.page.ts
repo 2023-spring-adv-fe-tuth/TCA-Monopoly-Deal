@@ -14,12 +14,17 @@ export class GamestartPage implements OnInit {
   ) { }
 
   playersList : Player[] = [];
+  currentPlayerList = '';
 
   ngOnInit() {
     this.playersList = this.gameSvc.returnPlayerList();
     console.table(this.playersList)
-
-
   }
+  updateCurrentPlayerList(ev:any){
+    this.currentPlayerList = ev.target.value;
+    console.log(this.currentPlayerList);
+  }
+
+
 
 }

@@ -5,7 +5,7 @@ import { Game } from './player';
 
 
 const playerList : Player[] = [
-
+  
   {
       name:"Sujal",
       wins: 0,
@@ -68,6 +68,9 @@ export class GameService {
 
   returnPlayerList = () =>{
     return playerList;
+  }
+  updateCurrentGame = () =>{
+
   }
 
 

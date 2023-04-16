@@ -9,7 +9,14 @@
     <ion-item >
       <ion-select
       [multiple]="true"
-      placeholder="Select Players">
+      label-placement="floating"
+      label="Select Players"
+      placeholder="Select Players"
+      justify="space-between"
+      okText="Select these players" 
+      cancelText="Go Back"
+      (ionChange)="updateCurrentPlayerList($event)"
+      >
         <ion-select-option *ngFor="let player of playersList" [value]="player">{{player.name}}</ion-select-option>
       </ion-select>
     </ion-item>
