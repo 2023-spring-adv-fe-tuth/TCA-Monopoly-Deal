@@ -12,6 +12,12 @@ export interface Player {
 
 export interface Game {
 
+    players: string[],
+    winner: string,
+    startTime : string,
+    endTime: string,
+    duration: string
+
 }
 
 

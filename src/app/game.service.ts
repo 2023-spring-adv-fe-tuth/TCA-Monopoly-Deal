@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Player } from './player';
+import { Game } from './player';
 
 
 
@@ -68,5 +69,9 @@ export class GameService {
   returnPlayerList = () =>{
     return playerList;
   }
+
+
+
+
 
 }
