@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../player';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-gamestart',
@@ -8,10 +9,16 @@ import { Player } from '../player';
 })
 export class GamestartPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private gameSvc: GameService
+  ) { }
 
+  playersList : Player[] = [];
 
   ngOnInit() {
+    this.playersList = this.gameSvc.returnPlayerList();
+    console.table(this.playersList)
+
 
   }
 

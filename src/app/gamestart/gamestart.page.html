@@ -6,9 +6,17 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
-      <ion-select >
+    <ion-item >
+      <ion-select
+      [multiple]="true"
+      placeholder="Select Players">
+        <ion-select-option *ngFor="let player of playersList" [value]="player">{{player.name}}</ion-select-option>
       </ion-select>
     </ion-item>
   </ion-list>
+
+
+  <ion-button>
+    Start
+  </ion-button>
 </ion-content>
