@@ -30,7 +30,11 @@
     </ion-grid>
   </div>
 
-<app-players></app-players>
+  <ul>
+    <li *ngFor="let player of playersList">
+      {{player.name}}
+    </li>
+  </ul>
 
 
 
