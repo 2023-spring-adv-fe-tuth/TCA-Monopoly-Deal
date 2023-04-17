@@ -14,7 +14,7 @@ export class GamestartPage implements OnInit {
   ) { }
 
   playersList : Player[] = [];
-  currentPlayerList = '';
+  currentPlayerList :Player[] = [];
 
   ngOnInit() {
     this.playersList = this.gameSvc.returnPlayerList();
@@ -23,7 +23,10 @@ export class GamestartPage implements OnInit {
   updateCurrentPlayerList(ev:any){
     this.currentPlayerList = ev.target.value;
     console.log(this.currentPlayerList);
-    this.gameSvc.updateCurrentGame(ev.target.value);
+    this.gameSvc.selectedPlayers(this.currentPlayerList);
+  }
+  createCurrentGame(){
+    this.gameSvc.createGame();
   }
 
 

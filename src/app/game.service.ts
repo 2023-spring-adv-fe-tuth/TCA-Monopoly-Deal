@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Player } from './player';
 import { Game } from './player';
 
+//Player List
 const playerList : Player[] = [
 
   {
@@ -56,6 +57,8 @@ const playerList : Player[] = [
 
 
 ];
+
+//Games
 const gameList : Game[] = [
   {
     players: ["Sujal","Jimmy"],
@@ -96,16 +99,20 @@ export class GameService {
   returnPlayerList = () =>{
     return playerList;
   }
-  updateCurrentGame = (currentPlayerList:Player[]) =>{
+  selectedPlayers = (currentPlayerList:Player[]) =>{
     currentPlayerList = currentPlayerList;
     console.log(currentPlayerList);
-  
 
-  }
+  };
   returnCurrentGame = () => {
     return currentPlayerList;
   }
 
+  createGame = () => {
+   
+      
+    
+  }
 
 
 
