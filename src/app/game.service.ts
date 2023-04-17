@@ -106,14 +106,22 @@ export class GameService {
   };
   returnCurrentGame = () => {
     return currentPlayerList;
+  };
+
+  getPlayerNamesFromCurrentGame = () =>{
+    var array = ["Sujal", "Pratik"];
+    return array;
   }
 
-  createGame = () => {
-   
-      
-    
+  createGame =() => {
+  const newGame : Game = {
+  players: ["Sujal", "Pratik"],
+  winner: "Sujal",
+  startTime : "",
+  endTime: "",
+  duration: "",
+  current: false
+}
   }
-
-
 
 }
