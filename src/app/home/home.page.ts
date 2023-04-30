@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Player } from '../player';
 import { GameService } from '../game.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -16,11 +17,11 @@ export class HomePage {
   playersList : Player[] = [];
 
   ngOnInit() {
-    console.log('TEST');
+    this.gameSvc.ngOnInit();
     this.playersList = this.gameSvc.returnPlayerList();
-    console.table(this.playersList)
 
 
+    //local storage testing
 
 
   }

@@ -11,9 +11,10 @@ export class GameoverPage implements OnInit {
   constructor(private gameSvc: GameService) { }
 
   ngOnInit() {
-    let winner = 'TEST WINNER';
-    console.log(this.gameSvc.returnCurrentGame());
+    console.log("Page Loaded");
   }
+
+
 
 
 

@@ -30,24 +30,20 @@
     </ion-grid>
   </div>
 
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Wins</th>
-      <th>Loses</th>
-    </tr>
-    <tr *ngFor="let player of playersList">
-      <td>{{player.name}}</td>
-      <td>{{player.wins}}</td>
-      <td>{{player.loses}}</td>
-    </tr>
-  </table>
 
 
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid id="leaderboard">
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>Wins</ion-col>
+      <ion-col>Loses</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let player of playersList">
+      <ion-col>{{player.name}}</ion-col>
+      <ion-col>{{player.wins}}</ion-col>
+      <ion-col>{{player.loses}}</ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
